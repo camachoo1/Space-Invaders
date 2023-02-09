@@ -77,7 +77,7 @@ export class InvadersController {
     this.updateVelAndDirs();
     this.detectCollision();
     this.drawInvaders(ctx);
-    this.resetMoveDownTimer();
+    this.resetMoveTimer();
     this.fire();
   }
 
@@ -118,7 +118,7 @@ export class InvadersController {
     }
   }
 
-  resetMoveDownTimer() {
+  resetMoveTimer() {
     if (this.moveTimer <= 0) this.moveTimer = this.defaultMoveTimer;
   }
 
