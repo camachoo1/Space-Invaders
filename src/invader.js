@@ -5,7 +5,7 @@ export class Invader {
     this.x = x;
     this.y = y;
     this.width = 45;
-    this.height = 30;
+    this.height = 32;
 
     this.image = new Image();
     this.image.src = `assets/images/enemy${imageNum}.png`;
