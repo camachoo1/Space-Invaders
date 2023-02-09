@@ -78,8 +78,7 @@ const displayGameOver = function () {
 // Element
 const startGame = document.querySelector('.start-game');
 
-// const start = function () {
-//   setInterval(game, 1000 / 60);
-// };
-// startGame.addEventListener('click', start);
-setInterval(game, 1000 / 60);
+const start = function () {
+  setInterval(game, 1000 / 60);
+};
+startGame.addEventListener('click', start);
