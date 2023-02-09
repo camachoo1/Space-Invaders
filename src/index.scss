@@ -1,4 +1,5 @@
 h1#header {
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -38,8 +39,10 @@ body {
 
 .nav-bar {
   width: 100%;
+  // transform: translate(-50%, -20%);
   position: relative;
   z-index: 1;
+  margin-right: 50%;
   animation: fade 5s;
   -webkit-animation: fade 5s;
   -moz-animation: fade 5s;
@@ -48,6 +51,7 @@ body {
 }
 
 .nav-bar ul {
+  transform: translate(22.75%, -5%);
   height: 50px;
   display: flex;
   justify-content: center;
@@ -55,11 +59,12 @@ body {
   flex-direction: row;
   position: fixed;
   text-align: center;
+  width: 100%;
 }
 
 .nav-bar ul li {
   display: inline-block;
-  padding: 40px 15px;
+  padding: 40px 15px 40px 0px;
   text-align: center;
   padding-top: 5px;
 }
@@ -70,6 +75,11 @@ body {
   text-transform: uppercase;
   font-size: 20px;
   padding: 5px 10px;
+}
+
+.nav-bar ul li a:hover {
+  font-size: 25px;
+  color: rgb(234, 200, 7);
 }
 
 .how-to-play p {
