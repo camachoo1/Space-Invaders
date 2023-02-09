@@ -8,7 +8,7 @@ h1#header {
   align-items: center;
   font-family: "space invaders";
   text-align: center;
-  font-size: 3rem;
+  font-size: 4rem;
   color: rgb(234, 200, 7);
   animation: fade 5s;
   -webkit-animation: fade 5s;
@@ -50,8 +50,8 @@ body {
 }
 
 .nav-bar ul {
-  transform: translate(22.75%, -5%);
-  height: 50px;
+  transform: translate(23%, -1%);
+  height: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
