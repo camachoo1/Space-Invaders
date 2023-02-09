@@ -1,0 +1,131 @@
+h1#header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'space invaders';
+  text-align: center;
+  font-size: 3rem;
+  color: rgb(234, 200, 7);
+  animation: fade 5s;
+  -webkit-animation: fade 5s;
+  -moz-animation: fade 5s;
+  -o-animation: fade 5s;
+  -ms-animation: fade 5s;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+body {
+  // background-color: #0c192c;
+  background-image: url("../assets/images/space.png");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+  font-family: 'space invaders';
+}
+
+.nav-bar {
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  animation: fade 5s;
+  -webkit-animation: fade 5s;
+  -moz-animation: fade 5s;
+  -o-animation: fade 5s;
+  -ms-animation: fade 5s;
+}
+
+.nav-bar ul {
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  position: fixed;
+  text-align: center;
+}
+
+.nav-bar ul li {
+  display: inline-block;
+  padding: 40px 15px;
+  text-align: center;
+  padding-top: 5px;
+}
+
+.nav-bar ul li a {
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 20px;
+  padding: 5px 10px;
+}
+
+.how-to-play p {
+  color: rgb(234, 200, 7);
+}
+
+.hidden {
+  display: none;
+}
+
+.how-to-play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+
+  background-color: #0c192c;
+  color: white;
+  padding: 6rem;
+  border-radius: 5px;
+  box-shadow: 0 3rem 5rem black;
+  z-index: 10;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+  z-index: 5;
+}
+
+#canvas {
+  // box-shadow: white 2px 1px 1px 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0px;
+  padding: 0px;
+  border-color: #fff;
+}
+
+#socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: auto;
+  gap: 5px;
+}
+
+#linkedin, #github {
+  height: 35px;
+  width: 35px;
+}
